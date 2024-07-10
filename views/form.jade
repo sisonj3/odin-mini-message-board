@@ -1,0 +1,15 @@
+extends layout 
+
+html
+    head
+        title Form
+    body
+        block content
+            form(method='POST', action='/new')
+                div 
+                    label(for='author') Author:
+                    input(type='text', id='author')
+                div
+                    label(for='message') Message:
+                    input(type='text', id='message')
+                button(type="submit") Submit
