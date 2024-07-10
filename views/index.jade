@@ -1,5 +1,13 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+html 
+  head 
+    title #{title}
+  body 
+    block content
+      h1 Welcome to #{title}
+      for message in messages 
+        div
+          p Text: #{message.text}
+          p User: #{message.user}
+          p Date: #{message.added}
