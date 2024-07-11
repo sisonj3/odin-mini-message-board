@@ -6,6 +6,7 @@ html
   body 
     block content
       h1 Welcome to #{title}
+      a(href='http://localhost:3000/new') Add Message 
       for message in messages 
         div
           p Text: #{message.text}
